@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="o0H-t1-rYv">
+    <dependencies>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--List of ads-->
+        <scene sceneID="xyO-VA-Tiq">
+            <objects>
+                <tableViewController id="jdr-Hz-yZi" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="g0G-HD-r37">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B8m-XQ-Hjx">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Загрузить"/>
+                            <connections>
+                                <action selector="loadAds:" destination="jdr-Hz-yZi" eventType="touchUpInside" id="bAO-1g-9DV"/>
+                            </connections>
+                        </button>
+                        <connections>
+                            <outlet property="dataSource" destination="jdr-Hz-yZi" id="Kos-dg-1zM"/>
+                            <outlet property="delegate" destination="jdr-Hz-yZi" id="1R6-Xk-wKG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="List of ads" id="b2T-sr-dqf"/>
+                    <connections>
+                        <outlet property="bottomButton" destination="B8m-XQ-Hjx" id="7EZ-fI-xgd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khe-8h-KZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="767"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Mk-hT-imV">
+            <objects>
+                <navigationController id="o0H-t1-rYv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="gT2-iG-taV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jdr-Hz-yZi" kind="relationship" relationship="rootViewController" id="jxo-Yy-q9I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r11-JX-UnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-556" y="767"/>
+        </scene>
+    </scenes>
+</document>

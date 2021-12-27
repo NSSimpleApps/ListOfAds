@@ -12,7 +12,6 @@
 #import "AdListLoader.h"
 #import "AdItemViewModel.h"
 #import "AdItem.h"
-#import "UIAlertView+Extension.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -138,12 +137,12 @@
 }
 
 - (void)adListLoader:(AdListLoader *)adListLoader didFailLoadingAdListWithError:(NSError *)error {
-    
-    UIAlertView *alertView =
-    [[UIAlertView alloc] initWithTitle:error.localizedDescription
-                     cancelButtonTitle:@"Close"];
-    
-    [alertView show];
+    __auto_type alertController =
+    [UIAlertController alertControllerWithTitle:error.localizedDescription
+                                        message:nil preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel
+                                                      handler:nil]];
+    [self presentViewController:alertController animated:YES completion:nil];
     
     self.bottomButton.enabled = YES;
     [self.tableView endUpdates];

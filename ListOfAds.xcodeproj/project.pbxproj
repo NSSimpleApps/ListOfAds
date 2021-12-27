@@ -16,7 +16,6 @@
 		B54596C51D5778D800BF2FC3 /* AdsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54596C31D5778D800BF2FC3 /* AdsCell.xib */; };
 		B54596C91D57823200BF2FC3 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54596C81D57823200BF2FC3 /* TableViewController.m */; };
 		B54596CC1D57825900BF2FC3 /* UITableView+RegisterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B54596CB1D57825900BF2FC3 /* UITableView+RegisterCell.m */; };
-		B54596D01D57827300BF2FC3 /* UIAlertView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B54596CF1D57827300BF2FC3 /* UIAlertView+Extension.m */; };
 		B54596D41D57883300BF2FC3 /* NetDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B54596D31D57883300BF2FC3 /* NetDataProvider.m */; };
 		B54596D71D579C0300BF2FC3 /* RequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B54596D61D579C0300BF2FC3 /* RequestBuilder.m */; };
 		B5E6D2901D58EB3D0037A4E3 /* AdListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E6D28F1D58EB3D0037A4E3 /* AdListLoader.m */; };
@@ -46,8 +45,6 @@
 		B54596C81D57823200BF2FC3 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		B54596CA1D57825900BF2FC3 /* UITableView+RegisterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+RegisterCell.h"; sourceTree = "<group>"; };
 		B54596CB1D57825900BF2FC3 /* UITableView+RegisterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RegisterCell.m"; sourceTree = "<group>"; };
-		B54596CE1D57827300BF2FC3 /* UIAlertView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Extension.h"; sourceTree = "<group>"; };
-		B54596CF1D57827300BF2FC3 /* UIAlertView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Extension.m"; sourceTree = "<group>"; };
 		B54596D21D57883300BF2FC3 /* NetDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetDataProvider.h; sourceTree = "<group>"; };
 		B54596D31D57883300BF2FC3 /* NetDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetDataProvider.m; sourceTree = "<group>"; };
 		B54596D51D579C0300BF2FC3 /* RequestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestBuilder.h; sourceTree = "<group>"; };
@@ -162,8 +159,6 @@
 			children = (
 				B54596CA1D57825900BF2FC3 /* UITableView+RegisterCell.h */,
 				B54596CB1D57825900BF2FC3 /* UITableView+RegisterCell.m */,
-				B54596CE1D57827300BF2FC3 /* UIAlertView+Extension.h */,
-				B54596CF1D57827300BF2FC3 /* UIAlertView+Extension.m */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -361,7 +356,6 @@
 				B5E6D2971D58F1930037A4E3 /* AdImageItemBuilder.m in Sources */,
 				B54596CC1D57825900BF2FC3 /* UITableView+RegisterCell.m in Sources */,
 				B5E6D29A1D58F3EE0037A4E3 /* AdTagsBuilder.m in Sources */,
-				B54596D01D57827300BF2FC3 /* UIAlertView+Extension.m in Sources */,
 				B54596C41D5778D800BF2FC3 /* AdsCell.m in Sources */,
 				B5E6D29D1D58F4890037A4E3 /* Advert.m in Sources */,
 				B5E6D2A01D58F4AD0037A4E3 /* AdvertBuilder.m in Sources */,
